@@ -1,0 +1,15 @@
+{
+  "extends": "eslint-config-egg",
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "rules": {
+    "no-trailing-spaces": "off",
+    "indent": "error",
+    "strict": "off",
+    "comma-dangle": "off",
+    "prefer-const": "off",
+    "no-unused-vars": "off",
+    "no-bitwise": "off"
+  }
+}

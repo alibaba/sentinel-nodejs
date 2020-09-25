@@ -1,0 +1,50 @@
+{
+  "name": "sentinel",
+  "description": "A powerful framework for resilience (rate limiting and circuit breaking)",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "test": "npm run lint && egg-bin test",
+    "test-local": "egg-bin test",
+    "autod": "autod",
+    "cov": "egg-bin cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "ci": "npm run lint && npm run cov"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "app.js"
+  ],
+  "dependencies": {
+    "debug": "^3.1.0",
+    "qps": "^1.1.1",
+    "sdk-base": "^3.4.0",
+    "utility": "^1.13.1"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "egg-bin": "^4.13.0",
+    "eslint": "^4.19.1",
+    "eslint-config-egg": "^7.0.0",
+    "sinon": "^7.2.3",
+    "urllib": "^2.34.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alibaba/sentinel-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alibaba/sentinel-nodejs"
+  },
+  "keywords": [
+    "sentinel"
+  ],
+  "ci": {
+    "versions": "8, 10, 12"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  }
+}
